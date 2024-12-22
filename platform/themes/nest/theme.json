@@ -2,7 +2,7 @@
     "id": "botble/nest",
     "name": "Nest",
     "namespace": "Theme\\Nest\\",
-    "description": "Multivendor eCommerce",
+    "description": "eCommerce Theme",
     "author": "Daal Agency",
     "required_plugins": []
 }
