@@ -10,8 +10,8 @@
             </div>
 
             <x-core::card size="md">
-                <x-core::card.body>
-                    <h2 class="mb-3 text-center">Requires License Activation</h2>
+                <!-- <x-core::card.body> -->
+                    <!-- <h2 class="mb-3 text-center">Requires License Activation</h2>
 
                     <p class="text-secondary mb-4">
                         If you want to continue to use our platform, please activate license first.
@@ -71,7 +71,7 @@
                             aria-label="close"
                         >
                             Activate License
-                        </x-core::button>
+                        </x-core::button> -->
                     </div>
 
                     <div>
@@ -88,12 +88,12 @@
                             <x-core::button
                                 type="submit"
                                 class="w-100"
-                                color="link"
-                                size="sm"
-                            >Skip</x-core::button>
+                                color="primary"
+                                size="md"
+                            >برو به پنل ادمین</x-core::button>
                         </form>
                     </div>
-                </x-core::card.body>
+                <!-- </x-core::card.body> -->
             </x-core::card>
         </div>
     </div>
