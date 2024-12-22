@@ -7,12 +7,12 @@
 
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    {!! BaseHelper::googleFonts('https://fonts.googleapis.com/css2?family=' . urlencode(theme_option('font_text', 'Lato')) . ':ital,wght@0,400;0,700;1,400;1,700&family=' . urlencode(theme_option('font_heading', 'Quicksand')) . ':wght@400;500;600;700&display=swap') !!}
+    <!-- {!! BaseHelper::googleFonts('https://fonts.googleapis.com/css2?family=' . urlencode(theme_option('font_text', 'Lato')) . ':ital,wght@0,400;0,700;1,400;1,700&family=' . urlencode(theme_option('font_heading', 'Quicksand')) . ':wght@400;500;600;700&display=swap') !!} -->
 
     <style>
         :root {
-            --font-text: {{ theme_option('font_text', 'Lato') }}, sans-serif;
-            --font-heading: {{ theme_option('font_heading', 'Quicksand') }}, sans-serif;
+            --font-text: IRANSans, sans-serif;
+            --font-heading: IRANSans, sans-serif;
             --color-brand: {{ theme_option('color_brand', '#3BB77E') }};
             --primary-color: {{ theme_option('color_brand', '#3BB77E') }};
             --color-brand-rgb: {{ implode(',', BaseHelper::hexToRgb(theme_option('color_brand', '#3BB77E'))) }};
