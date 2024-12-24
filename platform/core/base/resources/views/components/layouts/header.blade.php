@@ -5,14 +5,14 @@
     }
 </style>
 
-{!! BaseHelper::googleFonts('https://fonts.googleapis.com/' . sprintf(
+<!-- {!! BaseHelper::googleFonts('https://fonts.googleapis.com/' . sprintf(
         'css2?family=%s:wght@300;400;500;600;700&display=swap',
         urlencode(setting('admin_primary_font', 'Inter')),
-)) !!}
+)) !!} -->
 
 <style>
     :root {
-        --primary-font: "{{ setting('admin_primary_font', 'Inter') }}";
+        --primary-font: "IRANSans";
         --primary-color: {{ $primaryColor = setting('admin_primary_color', '#206bc4') }};
         --primary-color-rgb: {{ implode(', ', BaseHelper::hexToRgb($primaryColor)) }};
         --secondary-color: {{ $secondaryColor = setting('admin_secondary_color', '#6c7a91') }};
