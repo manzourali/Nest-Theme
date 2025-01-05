@@ -72,7 +72,7 @@
         </div>
 
         <div class="row">
-            <div class="col-lg-8 col-12">
+            <div class="col-lg-6 col-12">
                 <div class="form-group  @error('billing_address.email') has-error @enderror">
                     <div class="form-input-wrapper">
                         <input
@@ -88,7 +88,7 @@
                     {!! Form::error('billing_address.email', $errors) !!}
                 </div>
             </div>
-            <div class="col-lg-4 col-12">
+            <div class="col-lg-6 col-12">
                 <div class="form-group  @error('billing_address.phone') has-error @enderror">
                     <div class="form-input-wrapper">
                         {!! Form::text(
@@ -139,51 +139,7 @@
         </div>
 
         <div class="row">
-            <div class="col-sm-6 col-12">
-                <div class="form-group mb-3 @error('billing_address.state') has-error @enderror">
-                    @if (EcommerceHelper::loadCountriesStatesCitiesFromPluginLocation())
-                        <div class="select--arrow form-input-wrapper">
-                            <select
-                                class="form-control"
-                                id="billing-address-state"
-                                name="billing_address[state]"
-                                data-form-parent=".customer-billing-address-form"
-                                data-type="state"
-                                autocomplete="state"
-                                data-url="{{ route('ajax.states-by-country') }}"
-                            >
-                                <option value="">{{ __('Select state...') }}</option>
-                                @if (old('billing_address.country', Arr::get($sessionCheckoutData, 'billing_address.country')) ||
-                                        !EcommerceHelper::isUsingInMultipleCountries())
-                                    @foreach (EcommerceHelper::getAvailableStatesByCountry(old('billing_address.country', Arr::get($sessionCheckoutData, 'billing_address.country'))) as $stateId => $stateName)
-                                        <option
-                                            value="{{ $stateId }}"
-                                            @if (old('billing_address.state', Arr::get($sessionCheckoutData, 'billing_address.state')) == $stateId) selected @endif
-                                        >{{ $stateName }}</option>
-                                    @endforeach
-                                @endif
-                            </select>
-                            <x-core::icon name="ti ti-chevron-down" />
-                            <label for='billing-address-state'>{{ __('State') }}</label>
-                        </div>
-                    @else
-                        <div class="form-input-wrapper">
-                            <input
-                                class="form-control"
-                                id="billing-address-state"
-                                name="billing_address[state]"
-                                type="text"
-                                autocomplete="state"
-                                value="{{ old('billing_address.state', Arr::get($sessionCheckoutData, 'billing_address.state')) }}"
-                            >
-                            <label for='billing-address-state'>{{ __('State') }}</label>
-                        </div>
-                    @endif
-                    {!! Form::error('billing_address.state', $errors) !!}
-                </div>
-            </div>
-
-            <div class="col-sm-6 col-12">
+            <div class="col-12">
                 <div class="form-group  @error('billing_address.city') has-error @enderror">
                     @if (EcommerceHelper::useCityFieldAsTextField())
                         <div class="form-input-wrapper">
