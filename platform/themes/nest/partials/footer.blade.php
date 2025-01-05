@@ -32,7 +32,7 @@
                     @if($socialLinks = json_decode($socialLinks, true))
                         <div @class(['col-lg-6 text-end d-none d-md-block', 'col-xl-4' => $hotline, 'col-xl-8' => ! $hotline])>
                             <div class="mobile-social-icon">
-                                <p class="font-heading h6 me-2">{{ __('Follow Us') }}</p>
+                                <p class="font-heading h6 me-2 mb-0">{{ __('Follow Us') }}</p>
                                 @foreach($socialLinks as $socialLink)
                                     @if (count($socialLink) == 3)
                                         <a href="{{ $socialLink[2]['value'] }}"
