@@ -16,7 +16,7 @@ class UnlicensedController extends BaseController
 
     public function index(Request $request): View|RedirectResponse
     {
-        $this->pageTitle('Requires License Activation');
+        $this->pageTitle('Go to admin panel');
 
         $this->validateRedirectUrl($request);
 
