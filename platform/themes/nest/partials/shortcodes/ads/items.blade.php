@@ -13,7 +13,7 @@
             </div>
         </section>
     @else
-        <section class="banners pt-60">
+        <section class="banners pb-40">
             <div class="container">
                 <div class="row justify-content-center">
                     @foreach ($keys as $key)
