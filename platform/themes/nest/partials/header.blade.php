@@ -11,8 +11,8 @@
 
     <style>
         :root {
-            --font-text: IRANSans, sans-serif;
-            --font-heading: IRANSans, sans-serif;
+            --font-text: IRANYekanXFaNum, sans-serif;
+            --font-heading: IRANYekanXFaNum, sans-serif;
             --color-brand: {{ theme_option('color_brand', '#3BB77E') }};
             --primary-color: {{ theme_option('color_brand', '#3BB77E') }};
             --color-brand-rgb: {{ implode(',', BaseHelper::hexToRgb(theme_option('color_brand', '#3BB77E'))) }};

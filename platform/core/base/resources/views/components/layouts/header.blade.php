@@ -12,7 +12,7 @@
 
 <style>
     :root {
-        --primary-font: "IRANSans";
+        --primary-font: "IRANYekanXFaNum";
         --primary-color: {{ $primaryColor = setting('admin_primary_color', '#206bc4') }};
         --primary-color-rgb: {{ implode(', ', BaseHelper::hexToRgb($primaryColor)) }};
         --secondary-color: {{ $secondaryColor = setting('admin_secondary_color', '#6c7a91') }};
